@@ -25,10 +25,10 @@ public class FileUploadControllerTest extends AbstractTest {
     @Test
     @WithMockUser(username = "default-user", password = "user", roles = "user_role")
     public void testUploadFiles() throws Exception {
-        InputStream resourceAsStream = this.getClass().getClassLoader().getResourceAsStream("registrationList.xlsx");
+        InputStream resourceAsStream = this.getClass().getClassLoader().getResourceAsStream("commitRecords.xlsx");
 
         assert resourceAsStream != null;
-        MockMultipartFile file = new MockMultipartFile("file", "registrationList.xlsx", "application/vnd.ms-excel", resourceAsStream);
+        MockMultipartFile file = new MockMultipartFile("file", "commitRecords.xlsx", "application/vnd.ms-excel", resourceAsStream);
         String uri = "/file/uploadFile";
         MvcResult mvcResult =  mvc.perform(MockMvcRequestBuilders.multipart(uri)
                         .file(file)

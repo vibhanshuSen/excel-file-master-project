@@ -23,7 +23,7 @@ public class FileRecords extends BaseDetailEntity {
     @ManyToOne
     @JoinColumn(name = "file_id")
     @NotNull
-    private UploadedFile uploadedFile;
+    private UploadedFile file;
 
     @ManyToOne
     @JoinColumn(name = "header_id")

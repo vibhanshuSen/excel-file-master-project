@@ -20,5 +20,7 @@ Spring Boot Demo application to upload file excel file and save details in db
 #### Steps to run application
 - Run ExcelFileMasterApplication main class
 - Once the application started : Go to browser and run http://localhost:8080/swagger-ui/index.html.
-- Upload File Format: .\test\resources\registrationList.xlsx
-- Upload File Format to verify status : .\test\resources\employeeFile.xlsx
+- username - default-admin
+- password - admin
+- Upload File Format: .\test\resources\commitRecords.xlsx
+- Upload File Format to verify status : .\test\resources\employeeRecords.xlsx

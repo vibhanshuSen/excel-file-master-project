@@ -87,7 +87,7 @@ public class UploadFileService extends BaseUserService {
                 .stream()
                 .map(book -> book
                         .toBuilder()
-                        .uploadedFile(file)
+                        .file(file)
                         .fileHeadersInfo(fileHeadersInfo)
                         .build())
                 .collect(Collectors.toList());
